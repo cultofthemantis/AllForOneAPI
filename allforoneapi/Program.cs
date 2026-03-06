@@ -23,6 +23,20 @@ builder.Services.AddScoped<ReverseAlphabetService>();
 builder.Services.AddScoped<ReverseIntService>();
 builder.Services.AddScoped<WakeUpService>();
 builder.Services.AddScoped<MadLibService>();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowVite",
+        policy =>
+        {
+            policy.WithOrigins()
+                  .AllowAnyHeader()
+                  
+                  .AllowAnyOrigin()
+                  
+                  .AllowAnyMethod();
+
+        });
+});
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.
@@ -33,7 +47,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("AllowVite");
 app.MapControllers();
 
 

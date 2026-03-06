@@ -33,3 +33,4 @@ C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\obj\Release\net9.0\refint\all
 C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\obj\Release\net9.0\allforoneapi.pdb
 C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\obj\Release\net9.0\allforoneapi.genruntimeconfig.cache
 C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\obj\Release\net9.0\ref\allforoneapi.dll
+C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\obj\Release\net9.0\allforoneapi.sourcelink.json

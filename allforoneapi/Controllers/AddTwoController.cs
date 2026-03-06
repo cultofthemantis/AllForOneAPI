@@ -21,6 +21,7 @@ namespace allforoneapi.Controllers
         }
 
         [HttpGet]
+        [Route("Sum/{num1}/{num2}")]
         public string Add(int num1, int num2)
         {
             return _service.Add(num1, num2);
