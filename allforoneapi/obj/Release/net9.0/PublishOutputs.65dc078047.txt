@@ -1,0 +1,12 @@
+C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\bin\Release\net9.0\publish\allforoneapi.exe
+C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\bin\Release\net9.0\publish\appsettings.Development.json
+C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\bin\Release\net9.0\publish\appsettings.json
+C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\bin\Release\net9.0\publish\allforoneapi.dll
+C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\bin\Release\net9.0\publish\allforoneapi.deps.json
+C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\bin\Release\net9.0\publish\allforoneapi.runtimeconfig.json
+C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\bin\Release\net9.0\publish\allforoneapi.pdb
+C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\bin\Release\net9.0\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\bin\Release\net9.0\publish\Microsoft.OpenApi.dll
+C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\bin\Release\net9.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\bin\Release\net9.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\kelle\Downloads\AllForOneAPI\allforoneapi\bin\Release\net9.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll

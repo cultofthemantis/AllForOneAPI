@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "cMkFiWoepC4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kelle\\Downloads\\AllForOneAPI\\allforoneapi\\allforoneapi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kelle\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.9\\microsoft.aspnetcore.openapi.9.0.9.nupkg.sha512",
+    "C:\\Users\\kelle\\.nuget\\packages\\microsoft.openapi\\1.6.23\\microsoft.openapi.1.6.23.nupkg.sha512",
+    "C:\\Users\\kelle\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\9.0.0\\swashbuckle.aspnetcore.swagger.9.0.0.nupkg.sha512",
+    "C:\\Users\\kelle\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\9.0.0\\swashbuckle.aspnetcore.swaggergen.9.0.0.nupkg.sha512",
+    "C:\\Users\\kelle\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\9.0.0\\swashbuckle.aspnetcore.swaggerui.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
