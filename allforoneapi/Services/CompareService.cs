@@ -30,7 +30,7 @@ namespace allforoneapi.Services
                 
             }
 
-            return $"{comparison}";
+            return comparison;
         }
     }
 }

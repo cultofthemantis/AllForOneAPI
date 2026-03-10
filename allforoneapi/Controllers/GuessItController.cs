@@ -6,7 +6,7 @@ namespace allforoneapi.Controllers
 {
     
 [ApiController]
-[Route("api/[controller]")]
+[Route("[controller]")]
 public class GuessItController : ControllerBase
 {
     public readonly GuessItService _service;
