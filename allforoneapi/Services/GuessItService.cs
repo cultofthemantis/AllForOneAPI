@@ -1,20 +1,23 @@
 using System;
-
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
+using allforoneapi.Services;
 namespace allforoneapi.Services;
 
 public class GuessItService
 {
-    private readonly Random random = new();
-
-    public string Play(int guess, int max)
-    {
-        int number = random.Next(1, max + 1);
-
-        if (guess == number)
+        public readonly Random random = new();
+        public int number;
+        public string Play(int guess)
         {
-            return "Correct!";
+                number = random.Next(1, 101);
+
+            if (guess == number)
+            {
+                return "Correct!";
+            }
+
+            return guess < number ? "Higher" : "Lower";
         }
 
-        return guess < number ? "Higher" : "Lower";
-    }
-}
+     }

@@ -1,49 +1,35 @@
 using Microsoft.AspNetCore.Mvc;
 using allforoneapi.Services;
 
-namespace allforoneapi.Controllers;
-
+namespace allforoneapi.Services
+{
+    
 [ApiController]
 [Route("api/[controller]")]
 public class GuessItController : ControllerBase
 {
-    private readonly GuessItService service;
+    public readonly GuessItService _service;
 
     public GuessItController(GuessItService service)
     {
-        this.service = service;
+        _service = service;
     }
 
-    [HttpGet("easy")]
-    public IActionResult Easy(int guess)
-    {
-        if (guess < 1 || guess > 10)
-        {
-            return BadRequest("Guess between 1 and 10.");
-        }
-
-        return Ok(service.Play(guess, 10));
-    }
-
-    [HttpGet("medium")]
-    public IActionResult Medium(int guess)
-    {
-        if (guess < 1 || guess > 50)
-        {
-            return BadRequest("Guess between 1 and 50.");
-        }
-
-        return Ok(service.Play(guess, 50));
-    }
-
-    [HttpGet("hard")]
-    public IActionResult Hard(int guess)
+    [HttpGet]
+    [Route("GuessIt/{guess}")]
+    public string GuessItGame(int guess)
     {
         if (guess < 1 || guess > 100)
         {
-            return BadRequest("Guess between 1 and 100.");
+            return "Guess between 1 and 100";
         }
-
-        return Ok(service.Play(guess, 100));
+        
+        else
+            {
+            return _service.Play(guess);
+                
+            }
     }
+}
+
 }

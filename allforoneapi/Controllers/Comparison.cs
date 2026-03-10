@@ -20,6 +20,7 @@ namespace allforoneapi.Controllers
         }
 
         [HttpGet]
+        [Route("Comparison/{num1}/{num2}")]
         public string Compare(int num1, int num2)
         {
             return _service.Compare(num1, num2);
