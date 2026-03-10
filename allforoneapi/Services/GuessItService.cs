@@ -1,4 +1,7 @@
 using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Linq;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
 using allforoneapi.Services;
@@ -17,7 +20,8 @@ public class GuessItService
                 return "Correct!";
             }
 
-            return guess < number ? "Higher" : "Lower";
+            string result = guess < number ? "Higher" : "Lower";
+            return result;
         }
 
      }

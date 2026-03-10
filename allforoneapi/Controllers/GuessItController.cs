@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using allforoneapi.Services;
+using allforoneapi.Controllers;
 
-namespace allforoneapi.Services
+namespace allforoneapi.Controllers
 {
     
 [ApiController]
@@ -16,11 +17,12 @@ public class GuessItController : ControllerBase
     }
 
     [HttpGet]
-    [Route("GuessIt/{guess}")]
+    [Route("{guess}")]
     public string GuessItGame(int guess)
     {
         if (guess < 1 || guess > 100)
         {
+
             return "Guess between 1 and 100";
         }
         

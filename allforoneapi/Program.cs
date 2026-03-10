@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddScoped<AddTwoService>();
 builder.Services.AddScoped<CompareService>();
-builder.Services.AddSingleton<GuessItService>();
+builder.Services.AddScoped<GuessItService>();
 builder.Services.AddScoped<OddOrEvenService>();
 builder.Services.AddScoped<Magic8BallService>();
 builder.Services.AddScoped<RestaurantPickerService>();

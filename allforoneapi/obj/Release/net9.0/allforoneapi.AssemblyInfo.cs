@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("allforoneapi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c87a8c4ca63ce01c9feb0db249b3db0eab948653")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2bb934f17d5d8e5724eeb3b7ae2bb6d1c6995c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("allforoneapi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("allforoneapi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
