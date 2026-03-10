@@ -20,7 +20,7 @@ namespace allforoneapi.Controllers
         }
 
         [HttpGet]
-        [Route("MadLib/{name}/{place}/{adjective}/{noun}/{adjective2}/{verb}")]
+        [Route("{name}/{place}/{adjective}/{noun}/{adjective2}/{verb}")]
         public string Story(string name, string place, string adjective, string noun, string adjective2, string verb)
         {
             return _service.Story(name, place, adjective, noun, adjective2, verb);
