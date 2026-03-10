@@ -1,27 +1,29 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using allforoneapi.Services;
+using allforoneapi.Controllers;
 
-namespace allforoneapi.Controllers;
-
-[ApiController]
-[Route("api/[controller]")]
-public class Magic8BallController : ControllerBase
+namespace allforoneapi.Controllers
 {
-    private readonly Magic8BallService service;
 
-    public Magic8BallController(Magic8BallService service)
+    [ApiController]
+    [Route("[controller]")]
+    public class MagicEightBallController : ControllerBase
     {
-        this.service = service;
-    }
+        public readonly MagicEightBallService _service;
 
-    [HttpGet]
-    public IActionResult Ask(string question)
-    {
-        if (string.IsNullOrWhiteSpace(question))
+        public MagicEightBallController(MagicEightBallService service)
         {
-            return BadRequest("Question required.");
+            _service = service;
         }
 
-        return Ok(service.Ask());
+        [HttpGet]
+        [Route("{question}")]
+        public string Ask(string question)
+        {
+            return _service.Ask(question);
+        }
     }
 }

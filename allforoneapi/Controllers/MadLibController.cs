@@ -12,7 +12,7 @@ namespace allforoneapi.Controllers
     [Route("[controller]")]
     public class MadLibController : ControllerBase
     {
-        readonly MadLibService _service;
+        public readonly MadLibService _service;
 
         public MadLibController(MadLibService service)
         {

@@ -1,19 +1,26 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using allforoneapi.Services;
+using allforoneapi.Controllers;
 namespace allforoneapi.Services;
 
-public class Magic8BallService
+public class MagicEightBallService
 {
-    private readonly string[] responses =
+    public string Ask(string question)
     {
+        string[] responses =
+        {
+            
         "Yes","No","Maybe","Ask again",
         "Definitely","Absolutely not","Unclear","It is certain"
     };
 
-    private readonly Random random = new();
+        Random random = new Random();
 
-    public string Ask()
-    {
-        return responses[random.Next(responses.Length)];
+        string answer = responses[random.Next(0, 6)];
+        return answer;
     }
 }

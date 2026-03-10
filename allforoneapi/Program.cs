@@ -17,7 +17,7 @@ builder.Services.AddScoped<AddTwoService>();
 builder.Services.AddScoped<CompareService>();
 builder.Services.AddScoped<GuessItService>();
 builder.Services.AddScoped<OddOrEvenService>();
-builder.Services.AddScoped<Magic8BallService>();
+builder.Services.AddScoped<MagicEightBallService>();
 builder.Services.AddScoped<RestaurantPickerService>();
 builder.Services.AddScoped<ReverseAlphabetService>();
 builder.Services.AddScoped<ReverseIntService>();
